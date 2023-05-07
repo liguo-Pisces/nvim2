@@ -1,5 +1,21 @@
 local M = {}
 
+function M.dump(x)
+  print(vim.inspect(x))
+end
+
+function M.tblMerge(t1, t2)
+  for _, v in ipairs(t2) do
+    table.insert(t1, v)
+  end
+
+  return t1
+end
+
+function M.pluginMerge(p1, p2)
+  return M.tblMerge(p1, p2)
+end
+
 function M.echo(str)
     vim.cmd "redraw"
     vim.api.nvim_echo({ { str, "Bold" } }, true, {})
