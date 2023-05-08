@@ -8,11 +8,10 @@ for _, plugin in ipairs {
   "plugins.ui",
   "plugins.lines",
   "plugins.lsp",
+  "plugins.cmp",
 } do
   plugins = utils.pluginMerge(plugins, require(plugin))
 end
-
-utils.dump(plugins)
 
 -- local base = require("plugins.base")
 -- for k, v in ipairs(base) do

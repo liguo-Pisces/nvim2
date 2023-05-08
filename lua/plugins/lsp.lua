@@ -2,17 +2,11 @@ return {
   -- LSP
   {
     "neovim/nvim-lspconfig",
-    config = require "plugins.configs.lspconfig"
+    config = require "plugins.configs.lspconfig",
   },
   {
     "jose-elias-alvarez/null-ls.nvim",
-    config = function()
-      require("null-ls").setup {
-        sources = {
-
-        },
-      }
-    end
+    config = require "plugins.configs.null-ls",
   },
   -- LSP Installer
   {
