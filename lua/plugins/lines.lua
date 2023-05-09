@@ -1,11 +1,24 @@
 return {
   -- Statusline
   {
-    "rebelot/heirline.nvim",
+    "nvim-lualine/lualine.nvim",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
     config = function()
-      require("heirline").setup {}
+      require("lualine").setup {
+        options = {
+          theme = "tokyonight",
+        }
+      }
     end
   },
+  -- {
+  --   "rebelot/heirline.nvim",
+  --   config = function()
+  --     require("heirline").setup {}
+  --   end,
+  -- },
   -- Tabline
   {
     "akinsho/bufferline.nvim",

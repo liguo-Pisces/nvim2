@@ -16,6 +16,10 @@ return {
       require("mason").setup {}
     end
   },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    config = require "plugins.configs.mason-lspconfig",
+  },
   -- Diagnostics
   {
     "folke/trouble.nvim",

@@ -3,6 +3,9 @@ return {
     "nvim-lua/plenary.nvim",
   },
   {
+    "famiu/bufdelete.nvim",
+  },
+  {
     "nvim-tree/nvim-web-devicons",
   },
   {

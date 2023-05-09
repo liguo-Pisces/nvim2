@@ -9,6 +9,8 @@ for _, plugin in ipairs {
   "plugins.lines",
   "plugins.lsp",
   "plugins.cmp",
+  "plugins.editing",
+  "plugins.code",
 } do
   plugins = utils.pluginMerge(plugins, require(plugin))
 end
